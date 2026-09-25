@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ملخص أعمال الشهر الأول — منظومة الأثر | مدارس النبلاء الأهلية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --maroon:#6E2439; --maroon-dark:#4A1626; --maroon-light:#8C3350; --maroon-tint:#F3E6EA;
+    --gold:#B8923F; --gold-light:#E9DBB2; --gold-glow:#EFCB78;
+    --cream:#FBF7EF; --paper:#F3ECDD; --ink:#2A211D; --ink-soft:#5B4F49; --line:#E1D3B0;
+    --shadow: 0 14px 34px -16px rgba(74,22,38,.4);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0; background:var(--cream); color:var(--ink); font-family:'Tajawal',sans-serif; line-height:1.85; font-size:16.5px; overflow-x:hidden;}
+  h1,h2,h3,h4{font-family:'Aref Ruqaa',serif; font-weight:700; color:var(--maroon-dark); line-height:1.3;}
+  img{max-width:100%; display:block;}
+  ::selection{background:var(--gold-light);}
+
+  .topbar{position:sticky; top:0; z-index:70; background:rgba(251,247,239,.9); backdrop-filter:blur(10px); border-bottom:1px solid var(--line);}
+  .topbar-inner{max-width:1240px; margin:0 auto; padding:10px 22px; display:flex; align-items:center; gap:14px;}
+  .topbar img{height:38px;}
+  .topbar .brandtext strong{display:block; font-size:14.5px; color:var(--maroon-dark); font-weight:700;}
+  .topbar .brandtext span{font-size:12px; color:var(--ink-soft);}
+  .navpills{margin-inline-start:auto; display:flex; gap:8px; flex-wrap:wrap;}
+  .navpills a{font-size:13px; color:var(--maroon-dark); text-decoration:none; padding:7px 14px; border-radius:999px; border:1px solid var(--line); background:#fff; transition:all .2s ease; white-space:nowrap;}
+  .navpills a:hover{background:var(--maroon-dark); color:#fff; border-color:var(--maroon-dark);}
+  @media (max-width:980px){ .navpills{display:none;} }
+
+  .hero{position:relative; background:radial-gradient(120% 140% at 50% -10%, #86304a 0%, var(--maroon-dark) 55%, #33101c 100%); color:#fff; padding:80px 22px 68px; overflow:hidden; text-align:center;}
+  .rosette{position:absolute; top:50%; left:50%; width:900px; height:900px; margin:-450px 0 0 -450px; animation:spin 140s linear infinite; pointer-events:none;}
+  .rosette .rz-item{position:absolute; top:50%; left:50%;}
+  .rosette .rz-item img{display:block; width:100%; height:100%; object-fit:contain; opacity:.24; filter:brightness(0) invert(1);}
+  @keyframes spin{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}
+  @keyframes spin-rev{from{transform:rotate(360deg);}to{transform:rotate(0deg);}}
+  @media (prefers-reduced-motion: reduce){ .rosette, .rosette *{animation:none !important;} }
+  .hero-inner{position:relative; max-width:840px; margin:0 auto;}
+  .hero .crest{height:66px; margin:0 auto 20px;}
+  .hero .kicker-line{color:var(--gold-glow); font-size:14px; margin-bottom:14px;}
+  .hero h1{font-size:clamp(30px,5.2vw,50px); color:#fff; margin:0 0 14px;}
+  .hero .sub{font-family:'Tajawal'; font-weight:700; color:var(--gold-glow); font-size:clamp(15px,2vw,18px); margin-bottom:20px;}
+  .hero p.lede{font-size:clamp(15.5px,2vw,18.5px); color:#f1e1d7; max-width:680px; margin:0 auto 34px;}
+  .stat-row{display:grid; grid-template-columns:repeat(4,1fr); gap:14px; max-width:760px; margin:0 auto;}
+  .stat{background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.16); border-radius:16px; padding:16px 8px;}
+  .stat b{display:block; font-family:'Aref Ruqaa'; font-size:clamp(24px,3.6vw,32px); color:var(--gold-glow); margin-bottom:4px;}
+  .stat span{font-size:12px; color:#f1e1d7;}
+  @media (max-width:640px){ .stat-row{grid-template-columns:repeat(2,1fr);} }
+
+  .group{padding:56px 22px;}
+  .group + .group{border-top:1px solid var(--line);}
+  .group-inner{max-width:1200px; margin:0 auto;}
+  .group-head{display:flex; align-items:flex-start; gap:16px; margin-bottom:28px;}
+  .group-head .gn{
+    flex:0 0 auto; width:52px; height:52px; border-radius:16px; background:var(--maroon-dark); color:var(--gold-glow);
+    display:flex; align-items:center; justify-content:center; font-family:'Aref Ruqaa'; font-size:22px;
+  }
+  .group-head h2{font-size:clamp(21px,3vw,27px); margin:0 0 8px;}
+  .group-head p{margin:0; color:var(--ink-soft); font-size:14.5px; max-width:720px;}
+
+  .tilegrid{display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:20px;}
+  .tile{position:relative; background:#fff; border-radius:20px 20px 14px 14px; overflow:hidden; box-shadow:var(--shadow); cursor:pointer; border:1px solid var(--line); transition:transform .22s ease, box-shadow .22s ease; display:flex; flex-direction:column;}
+  .tile:hover{transform:translateY(-5px); box-shadow:0 20px 40px -16px rgba(74,22,38,.45);}
+  .tile:focus-visible{outline:3px solid var(--gold); outline-offset:2px;}
+  .tile-dome{height:64px; width:100%; flex:0 0 auto; background:linear-gradient(150deg,var(--maroon-light),var(--maroon-dark)); border-radius:50% 50% 0 0/100% 100% 0 0; display:flex; align-items:center; justify-content:center; color:var(--gold-glow); font-size:26px; position:relative;}
+  .tile-dome::after{content:""; position:absolute; inset:8px; border:1px solid rgba(239,203,120,.35); border-radius:50% 50% 0 0/100% 100% 0 0;}
+  .tile-body{padding:16px 18px 20px; flex:1; display:flex; flex-direction:column;}
+  .tile-body .filetype{font-size:11px; font-weight:700; color:var(--gold); margin-bottom:6px; letter-spacing:.3px;}
+  .tile-body h3{font-size:16px; margin:0 0 8px; font-family:'Tajawal'; font-weight:700; color:var(--maroon-dark);}
+  .tile-body p{font-size:13.5px; color:var(--ink-soft); margin:0; flex:1;}
+  .tile-cta{margin-top:12px; font-size:12.5px; color:var(--gold); font-weight:700; display:flex; align-items:center; gap:6px;}
+  .tile-cta .arrow{transition:transform .2s ease;}
+  .tile:hover .tile-cta .arrow{transform:translateX(-4px);}
+
+  .modal-overlay{position:fixed; inset:0; background:rgba(30,17,20,.6); backdrop-filter:blur(4px); z-index:200; opacity:0; pointer-events:none; transition:opacity .25s ease; display:flex; align-items:center; justify-content:center; padding:22px;}
+  .modal-overlay.open{opacity:1; pointer-events:auto;}
+  .modal{background:var(--cream); width:min(780px,100%); max-height:88vh; border-radius:22px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 30px 70px rgba(0,0,0,.4); transform:scale(.92) translateY(14px); transition:transform .28s cubic-bezier(.2,.9,.3,1.1);}
+  .modal-overlay.open .modal{transform:scale(1) translateY(0);}
+  .modal-head{background:linear-gradient(135deg,var(--maroon),var(--maroon-dark)); color:#fff; padding:22px 26px; display:flex; align-items:center; gap:16px; flex:0 0 auto; position:relative;}
+  .modal-head .mn{flex:0 0 auto; width:46px; height:46px; border-radius:14px; background:rgba(255,255,255,.14); display:flex; align-items:center; justify-content:center; font-size:22px; color:var(--gold-glow);}
+  .modal-head .mt{flex:1;}
+  .modal-head h3{color:#fff; margin:0 0 3px; font-size:18px;}
+  .modal-head .mtag{font-size:12px; color:var(--gold-light);}
+  .modal-close{flex:0 0 auto; width:34px; height:34px; border-radius:50%; border:1px solid rgba(255,255,255,.4); background:rgba(255,255,255,.08); color:#fff; cursor:pointer; font-size:15px;}
+  .modal-close:hover{background:rgba(255,255,255,.22);}
+  .modal-body{padding:24px 26px 30px; overflow-y:auto;}
+
+  .mf{margin-bottom:20px;}
+  .mf h5{margin:0 0 8px; font-size:12px; color:var(--gold); letter-spacing:.3px; font-weight:700; border-bottom:1px solid var(--line); padding-bottom:6px;}
+  .mf p{font-size:14.5px; color:var(--ink-soft); margin:0 0 10px;}
+  .mf ul{margin:0 0 10px; padding-inline-start:20px;}
+  .mf ul li{margin-bottom:8px; color:var(--ink-soft); font-size:14px;}
+  .mf ul li::marker{color:var(--gold);}
+
+  .cta-row{display:flex; flex-wrap:wrap; gap:10px; margin-top:6px;}
+  .cta-btn{
+    display:inline-flex; align-items:center; gap:8px; background:var(--maroon-dark); color:#fff !important;
+    text-decoration:none; padding:12px 20px; border-radius:12px; font-weight:700; font-size:14px;
+    transition:background .2s ease, transform .15s ease; border:none; cursor:pointer;
+  }
+  .cta-btn:hover{background:var(--maroon); transform:translateY(-2px);}
+  .cta-btn.secondary{background:#fff; color:var(--maroon-dark) !important; border:1px solid var(--line);}
+  .cta-btn.secondary:hover{background:var(--paper);}
+  .cta-btn .ico{font-size:16px;}
+
+  .quickstats{display:flex; flex-wrap:wrap; gap:10px; margin:14px 0 18px;}
+  .qs{background:var(--paper); border-radius:12px; padding:10px 16px; text-align:center; min-width:90px;}
+  .qs b{display:block; font-family:'Aref Ruqaa'; color:var(--maroon-dark); font-size:20px;}
+  .qs span{font-size:11px; color:var(--ink-soft);}
+
+  .flow{list-style:none; margin:16px 0; padding:0; position:relative;}
+  .flow::before{content:""; position:absolute; top:6px; bottom:6px; inset-inline-start:14px; width:2px; background:var(--gold-light);}
+  .flow li{position:relative; padding-inline-start:42px; padding-bottom:16px;}
+  .flow li:last-child{padding-bottom:0;}
+  .flow li::before{content:attr(data-n); position:absolute; inset-inline-start:0; top:0; width:29px; height:29px; border-radius:50%; background:var(--maroon); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:12.5px;}
+  .flow li h4{margin:1px 0 3px; font-size:14.5px; color:var(--maroon-dark);}
+  .flow li p{margin:0 0 4px; font-size:13.5px; color:var(--ink-soft);}
+  .flow li .shahed{font-size:12.5px; color:var(--gold); font-weight:700;}
+
+  .tbl-scroll{overflow-x:auto; margin:14px 0; border-radius:12px; box-shadow:0 8px 20px -14px rgba(74,22,38,.3);}
+  table{border-collapse:collapse; width:100%; background:#fff; font-size:13px; min-width:520px;}
+  table th{background:var(--maroon-dark); color:#fff; text-align:start; padding:10px 12px; font-weight:700; font-size:12px;}
+  table td{padding:10px 12px; border-bottom:1px solid var(--line); vertical-align:top; color:var(--ink-soft);}
+  table tr:last-child td{border-bottom:none;}
+  table tr:nth-child(even) td{background:#faf6ed;}
+
+  .callout{background:var(--paper); border-inline-start:4px solid var(--gold); padding:14px 18px; border-radius:6px; margin:14px 0; font-size:13.5px; color:var(--ink-soft);}
+  .callout strong{color:var(--maroon-dark);}
+
+  footer{background:var(--maroon-dark); color:#e9d9d0; padding:40px 22px 26px; text-align:center; font-size:13px;}
+  footer img{height:42px; margin:0 auto 12px;}
+  footer .fname{font-family:'Aref Ruqaa'; font-size:19px; color:#fff; margin-bottom:6px;}
+
+  .backtop{position:fixed; bottom:22px; left:22px; z-index:60; background:var(--maroon-dark); color:#fff; border:none; width:44px; height:44px; border-radius:50%; cursor:pointer; opacity:0; pointer-events:none; transition:opacity .25s ease; font-size:16px; box-shadow:0 6px 18px rgba(0,0,0,.25);}
+  .backtop.show{opacity:1; pointer-events:auto;}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <img src="assets/logo.png" alt="شعار مدارس النبلاء الأهلية">
+    <div class="brandtext"><strong>مدارس النبلاء الأهلية</strong><span>منظومة الأثر</span></div>
+    <nav class="navpills">
+      <a href="#p1">تشخيص الطالب</a>
+      <a href="#p2">أثر التدريس</a>
+      <a href="#p3">مسار القدرات</a>
+      <a href="#p4">بيئة التعلم</a>
+    </nav>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="rosette" id="rosette"></div>
+  <div class="hero-inner">
+    <img class="crest" src="assets/logo.png" alt="">
+    <div class="kicker-line">مدارس النبلاء الأهلية — منظومة الأثر</div>
+    <h1>ملخص أعمال الشهر الأول</h1>
+    <div class="sub">سبتمبر 2026 م — مجمع الشفا</div>
+    <p class="lede">مرجعية واحدة تحكم كل عمل: الطالب وأثر التعلم فيه. من تشخيص المستوى وسدّ الفجوات، إلى توجيه التدريس والتطوير المهني، ومسار نوعي للقدرات، ودراسة بيئة تعلّم أكثر متعة وإنتاجية. اضغط على أي خانة لعرض تفاصيلها وفتح مرفقها.</p>
+    <div class="stat-row">
+      <div class="stat"><b>4</b><span>محاور عمل رئيسة</span></div>
+      <div class="stat"><b>7</b><span>مرفقات ووثائق</span></div>
+      <div class="stat"><b>28</b><span>زيارة إشرافية منفذة</span></div>
+      <div class="stat"><b>100%</b><span>تغطية إشرافية للمعلمين</span></div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="group" id="p1">
+    <div class="group-inner">
+      <div class="group-head">
+        <div class="gn">١</div>
+        <div>
+          <h2>تشخيص مستوى الطالب وتحديد احتياجاته التعليمية</h2>
+          <p>تنفيذ القياس التشخيصي الداخلي وتحليل نتائجه؛ للوقوف على مستويات الطلاب وتحديد الفجوات التعليمية، وتصنيفهم إلى مستويات الدعم والنمو والتميز، وبناء آليات التدخل المناسبة لكل مستوى.</p>
+        </div>
+      </div>
+      <div class="tilegrid" id="grid-p1"></div>
+    </div>
+  </section>
+
+  <section class="group" id="p2" style="background:var(--paper);">
+    <div class="group-inner">
+      <div class="group-head">
+        <div class="gn">٢</div>
+        <div>
+          <h2>متابعة أثر التدريس في نمو الطالب</h2>
+          <p>رصد انتقال الطلاب بين مستويات الأداء (دعم – نمو – تميز) من خلال الزيارات الصفية وقياس الأثر التدريسي، وتوجيه التطوير المهني للمعلمين نحو الاحتياجات التي كشفت عنها نتائج الطلاب والممارسات الميدانية.</p>
+        </div>
+      </div>
+      <div class="tilegrid" id="grid-p2"></div>
+    </div>
+  </section>
+
+  <section class="group" id="p3">
+    <div class="group-inner">
+      <div class="group-head">
+        <div class="gn">٣</div>
+        <div>
+          <h2>بناء مسار الطالب للقدرات</h2>
+          <p>تطوير وإدارة مسار القدرات بما يرفع جاهزية الطالب ويعزز تقدمه: بناء الخطة الاستراتيجية والتشغيلية، وتنفيذ الاختبار التشخيصي وتحليل نتائجه، وإعداد مصفوفة المهارات المستهدفة، وتوسيع البيئة التدريبية.</p>
+        </div>
+      </div>
+      <div class="tilegrid" id="grid-p3"></div>
+    </div>
+  </section>
+
+  <section class="group" id="p4" style="background:var(--paper);">
+    <div class="group-inner">
+      <div class="group-head">
+        <div class="gn">٤</div>
+        <div>
+          <h2>تطوير تجربة تعلم الطالب وتحسين بيئته التعليمية</h2>
+          <p>دراسة الجداول الدراسية الحالية من حيث ملاءمتها لرحلة تعلم ممتعة للطالب وتوازنها بين المعرفي والتطبيقي، وتصميم نماذج بديلة توسّع مساحات التطبيق والممارسة والإنتاج.</p>
+        </div>
+      </div>
+      <div class="tilegrid" id="grid-p4"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <img src="assets/logo.png" alt="">
+  <div class="fname">مدارس النبلاء الأهلية</div>
+  <div>ملخص أعمال الشهر الأول — منظومة الأثر — سبتمبر 2026</div>
+  <div style="margin-top:8px; opacity:.75;">مجمع الشفا</div>
+</footer>
+
+<button class="backtop" id="backTop" aria-label="العودة للأعلى">↑</button>
+
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" role="dialog" aria-modal="true">
+    <div class="modal-head">
+      <div class="mn" id="modalNum">📄</div>
+      <div class="mt"><h3 id="modalTitle"></h3><div class="mtag" id="modalTag"></div></div>
+      <button class="modal-close" id="modalClose" aria-label="إغلاق">✕</button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<script>
+/* ============================================================
+   CONTENT REGISTRY
+============================================================ */
+function tbl(headers, rows){
+  return '<div class="tbl-scroll"><table><thead><tr>'+headers.map(h=>'<th>'+h+'</th>').join('')+'</tr></thead><tbody>'+
+    rows.map(r=>'<tr>'+r.map(c=>'<td>'+c+'</td>').join('')+'</tr>').join('')+'</tbody></table></div>';
+}
+
+const content = {
+
+"post_diag":{group:"p1", icon:"📋", filetype:"مستند PDF + رابط خارجي", title:"أعمال المنظومة ما بعد الاختبارات التشخيصية",
+ teaser:"ثماني آليات تنفيذية تربط نتائج القياس التشخيصي بإجراء مباشر على أرض الواقع.",
+ body:`
+  <div class="mf"><p>ثماني آليات تنفيذية اعتمدتها منظومة الأثر فور صدور نتائج القياس التشخيصي، تربط كل نتيجة بإجراء تنفيذي واضح ومسؤول ومؤشر متابعة:</p></div>
+  <ol class="flow">
+    <li data-n="1"><h4>مستهدفات الصعود الأكاديمي للطالب (Student KPIs)</h4><p>إلزام كل قسم بمستهدفات رقمية واضحة تضمن نقل 20% من الطلاب من مسار الدعم إلى مسار النمو خلال الفصل الدراسي.</p><span class="shahed">شاهد الأثر: نتائج خطة القياس الداخلي أولًا بأول، والعينات العشوائية لرصد نسب الصعود.</span></li>
+    <li data-n="2"><h4>تمكين الطالب عبر التوأمة التدريسية (Peer Coaching)</h4><p>ربط المعلمين المتميزين في نتائج التشخيص مع المعلمين الذين يواجه طلابهم صعوبات، لضمان حصول الطلاب على أفضل الممارسات.</p><span class="shahed">شاهد الأثر: خطة التوأمة المعتمدة وتقارير الزيارات المتبادلة.</span></li>
+    <li data-n="3"><h4>مجتمعات التعلّم المتمحورة حول احتياج الطالب (Student-Centered PLCs)</h4><p>جلسات أسبوعية دورية لمناقشة وتحليل أداء الطلاب (أسبوع لدعم المتعثرين، وأسبوع لتمكين المتميزين).</p><span class="shahed">شاهد الأثر: محاضر اجتماعات الأقسام وقراراتها التدريسية المباشرة.</span></li>
+    <li data-n="4"><h4>التقييمات الرشيقة لقياس نمو المهارات (Pulse Checks)</h4><p>اختبارات دورية قصيرة (5–10 دقائق) للتحقق من امتلاك الطالب للمهارات التي كانت مفقودة لديه.</p><span class="shahed">شاهد الأثر: نماذج الاختبارات القصيرة وتقارير نتائجها الدورية.</span></li>
+    <li data-n="5"><h4>مجالس المراجعة والمساءلة حول تعلّم الطلاب (Student Growth Reviews)</h4><p>اجتماعات رسمية نهاية كل ربع دراسي مع رؤساء الأقسام لمساءلة المقصرين والاحتفاء بمن قاد طلابه للمستهدف.</p><span class="shahed">شاهد الأثر: محضر اجتماع المجلس الربع سنوي والقرارات التصحيحية.</span></li>
+    <li data-n="6"><h4>الاستجابة السريعة لثغرات الطلاب (Feedback Loops)</h4><p>جلسات سريعة (10 دقائق) نهاية كل أسبوع مع المعلمين لتعديل خطط التدخل الفوري دون بيروقراطية.</p><span class="shahed">شاهد الأثر: سجل التدخلات السريعة الأسبوعي لإنقاذ الطلاب المتعثرين.</span></li>
+    <li data-n="7"><h4>خطط إثرائية لمستوى الطلاب المتميزين</h4><p>إعداد خطط إثرائية لمستوى التميز ومتابعة تنفيذها.</p><span class="shahed">شاهد الأثر: نتائج الطلاب في القياس الخارجي والداخلي.</span></li>
+    <li data-n="8"><h4>خطة علاجية عاجلة لمعالجة ظاهرة غياب الطلاب</h4><p>وضع خطة علاجية من قبل الأقسام لمعالجة الغياب فورًا (التفاصيل الكاملة في مرفق «ملف الغياب» المستقل).</p></li>
+  </ol>
+  <div class="mf" style="margin-top:6px;"><h5>المرفقات</h5>
+    <div class="cta-row">
+      <a class="cta-btn" href="assets/01-post-diagnostic-actions.pdf" target="_blank" rel="noopener"><span class="ico">📄</span> فتح ملف أعمال المنظومة (PDF)</a>
+      <a class="cta-btn secondary" href="https://docs.google.com/spreadsheets/d/1bTdYIqivC5o5eiYwKGxhdHTX60oJkVC_/edit?usp=drivesdk&ouid=111069660882756143473&rtpof=true&sd=true" target="_blank" rel="noopener"><span class="ico">📊</span> فتح تحليل القياس التشخيصي (Google Sheets)</a>
+    </div>
+  </div>`},
+
+"absence":{group:"p1", icon:"📅", filetype:"مستند PDF", title:"ملف الغياب",
+ teaser:"خطة علاجية مكثفة على ثلاثة أسابيع لكسر روتين الغياب وتثبيت سلوك الحضور.",
+ body:`
+  <div class="mf"><p>خطة تشغيلية يومية مكثفة على ثلاثة أسابيع متصاعدة، تربط كل يوم دراسي ببرنامج جاذب ومسؤول تنفيذ ومؤشر نتيجة وأداة محاسبة:</p></div>
+  <ol class="flow">
+    <li data-n="1"><h4>الأسبوع الأول: كسر الروتين</h4><p>الهدف: كسر روتين المدرسة ببرامج شبابية جاذبة ورصد التحسن الفوري بنهاية الأسبوع؛ عبر لوحة الصدارة الرقمية، بطولة الفرسان الإلكترونية، مجلس النشامى، ومنصة الملهمين.</p><span class="shahed">المستهدف: رفع حضور يوم الخميس إلى 93% كحد أدنى.</span></li>
+    <li data-n="2"><h4>الأسبوع الثاني: تصعيد الإثارة والبطولات الجماعية</h4><p>الهدف: تعميق الشراكة الحازمة مع أولياء الأمور بالتوازي مع زيادة جرعة البرامج الرياضية والتنافسية الكبرى، مع مقابلات وتعهدات الحالات الحرجة.</p><span class="shahed">المستهدف: خفض نسبة الغياب في القائمة الحمراء بنسبة 40%.</span></li>
+    <li data-n="3"><h4>الأسبوع الثالث: التتويج الأكبر والحسم النظامي</h4><p>الهدف: تثبيت السلوك الانضباطي، تكريم الأبطال بمكافآت كبرى، وتفعيل الحسم النظامي على المصرّين على الغياب بعد استنفاد فرص الجذب والتحفيز.</p><span class="shahed">المستهدف: خفض إجمالي في غياب المدرسة يتراوح بين 30% إلى 50%.</span></li>
+  </ol>
+  <div class="callout"><strong>آلية المحاسبة:</strong> اجتماع محاسبة أسبوعي لتقييم التزام المنفذين بجدول الأنشطة، وتقرير تشغيلي ختامي شامل يتضمن مؤشرات الأداء (KPIs) ونسب النجاح الرقمية.</div>
+  <div class="cta-row"><a class="cta-btn" href="assets/02-absence-plan.pdf" target="_blank" rel="noopener"><span class="ico">📄</span> فتح ملف الغياب كاملًا (PDF)</a></div>`},
+
+"perf_report":{group:"p2", icon:"📊", filetype:"مستند PDF", title:"التقرير التحليلي عن أداء المعلمين والمعلمات",
+ teaser:"28 زيارة إشرافية، تغطية 100%، وثماني ملاحظات جوهرية مع خطة تحسين أسبوعية.",
+ body:`
+  <div class="mf"><p><strong>مجمع الشفا</strong> — تقرير رقمي شامل لنتائج الزيارات الإشرافية وتحليل الملاحظات الميدانية لتقديم خطة تحسين استراتيجية واضحة.</p></div>
+  <div class="quickstats">
+    <div class="qs"><b>28</b><span>زيارة إشرافية</span></div>
+    <div class="qs"><b>20</b><span>معلم (بنين)</span></div>
+    <div class="qs"><b>8</b><span>معلمات (بنات)</span></div>
+    <div class="qs"><b>100%</b><span>نسبة التغطية</span></div>
+    <div class="qs"><b>8</b><span>ملاحظات جوهرية</span></div>
+    <div class="qs"><b>3</b><span>مشرفين منفذين</span></div>
+  </div>
+  <div class="mf"><p>أظهرت النتائج تغطية واسعة عبر "حصص تشخيص" وفرت خط أساس (Baseline) دقيق، لكن التحليل كشف فجوات جوهرية في الممارسات الصفية، أبرزها غياب التعلم النشط وضعف التقويم التكويني.</p></div>
+  <div class="mf"><h5>أبرز الملاحظات المرصودة</h5>
+    <ul>
+      <li><strong>غياب وضوح الأهداف:</strong> عدم توضيح أهداف الدرس للطلاب في بداية الحصة.</li>
+      <li><strong>ضعف التعلم النشط:</strong> اعتماد على التلقين المباشر دون استراتيجيات تفاعل كافية.</li>
+      <li><strong>قصور التقويم التكويني:</strong> ضعف التحقق من فهم الطلاب قبل الانتقال للمهارة التالية.</li>
+      <li><strong>غياب سجلات المتابعة والتصحيح:</strong> عدم وجود سجل متابعة مستمر مع المعلمة.</li>
+      <li><strong>استخدام العربية في حصص الإنجليزية</strong>، وغياب التعلم التعاوني والاستقصائي، وإهمال الفروق الفردية.</li>
+    </ul>
+  </div>
+  <div class="mf"><h5>خطة التحسين (خلال شهر دراسي)</h5>
+  <ol class="flow">
+    <li data-n="1"><h4>الأسبوع الأول: توحيد الممارسة</h4><p>اعتماد سجل المتابعة الموحد، وتعميم آلية كتابة الأهداف على السبورة لجميع المعلمين.</p></li>
+    <li data-n="2"><h4>الأسبوع الثاني: التدريب المصغر</h4><p>ورشة عمل تطبيقية حول استراتيجيات التعلم النشط وأدوات التقويم التكويني.</p></li>
+    <li data-n="3"><h4>الأسبوع الثالث: حصص البناء</h4><p>متابعة تطبيق الاستراتيجيات داخل الفصول، وتقديم تغذية راجعة فورية وداعمة.</p></li>
+    <li data-n="4"><h4>الأسبوع الرابع: حصص القياس</h4><p>تنفيذ "حصص قياس" نهائية لتقييم مدى التحسن، وإصدار تقرير المتابعة الثاني للجنة.</p></li>
+  </ol></div>
+  <div class="cta-row"><a class="cta-btn" href="assets/03-teacher-performance-report.pdf" target="_blank" rel="noopener"><span class="ico">📄</span> فتح التقرير الكامل (PDF)</a></div>`},
+
+"training_plan":{group:"p2", icon:"🗓️", filetype:"مستند PDF", title:"خطة التدريب المقترحة",
+ teaser:"جدول أسبوعي متكامل للتمهير المكثف يجمع بين التدريب النظري والتطبيق الميداني.",
+ body:`
+  <div class="mf"><p>الجدول الزمني المطور لخطة التدريب والتمهير المكثف (مجمع الشفا)، يبدأ من التمكين والتخطيط الفعّال وينتهي بقياس الأثر الكامل، بإشراف مدراء الأثر وتنسيق مع منظومة الأثر:</p></div>
+  ${tbl(['اليوم والتاريخ','نوع النشاط','المحاور التدريبية المستهدفة'],[
+    ['الأحد<br>20 سبتمبر','يوم تدريبي (1)<br>محاضرات وورش عمل','التمكين والتخطيط الفعّال: صياغة الأهداف الذكية، واستراتيجيات التعلم النشط والتعاوني والاستقصائي.'],
+    ['الاثنين<br>21 سبتمبر','يوم تدريبي (2)<br>محاضرات وورش عمل','خطة السير في الحصة وإدارة الصف: سيناريو إدارة الموقف التعليمي، ودمج أدوات التقويم التكويني السريع أثناء الشرح.'],
+    ['الثلاثاء<br>22 سبتمبر','ميداني (1)<br>حصص تطبيقية نموذجية','المحاكاة والنمذجة الواقعية: تطبيق حي داخل الفصول لخطة السير في الحصة أمام المعلمين.'],
+    ['الأربعاء<br>23 سبتمبر','ميداني (2)<br>زيارات متبادلة (أقران)','الممارسة الموجهة وتبادل الخبرات: تنفيذ زيارات تبادلية منظمة ومحكومة بالجدول الفعلي داخل الفصول.'],
+    ['الخميس<br>24 سبتمبر','ميداني (3)<br>قياس الأثر','تقييم الأداء الميداني المستقل وضبط المسار: قيام المعلمين بالتدريس المستقل الكامل وفق المعايير الجديدة، وتقييم شامل للأثر بالمشاركة مع الأقسام.'],
+  ])}
+  <div class="callout"><strong>يشرف على التنفيذ:</strong> مدراء الأثر (الـ3) بترشيح وتنسيق مع منظومة الأثر في كل محطة، وصولًا إلى إصدار تقرير قياس الأثر الأول ورفعه للجنة والشركة.</div>
+  <div class="cta-row"><a class="cta-btn" href="assets/04-training-plan.pdf" target="_blank" rel="noopener"><span class="ico">📄</span> فتح خطة التدريب كاملة (PDF)</a></div>`},
+
+"abilities_plan":{group:"p3", icon:"🎯", filetype:"مستند PDF", title:"خطة القدرات للفصل الدراسي الأول لعام 1448هـ",
+ teaser:"19 أسبوعًا دراسيًا بدورة مكثفة أسبوعية، من التأسيس إلى الاختبارات النهائية.",
+ body:`
+  <div class="mf"><p>خطة زمنية معتمدة من وزارة التعليم — الإدارة العامة للتعليم بمنطقة الرياض، تغطي <strong>19 أسبوعًا دراسيًا</strong> لمسار القدرات، بدورة مكثفة كل يوم خميس طوال الفصل الدراسي الأول:</p></div>
+  <ol class="flow">
+    <li data-n="1"><h4>الأسابيع 1–5: التأسيس الكمي واللفظي</h4><p>تهيئة الطالب، ثم تأسيس الكمي (العمليات الحسابية، الهندسة، الجبر) بالتوازي مع تأسيس اللفظي (استيعاب المقروء، التناظر اللفظي)، مع اختبار تشخيصي مبكر.</p></li>
+    <li data-n="2"><h4>الأسابيع 6–10: استراتيجيات الحل السريع</h4><p>التجريب والتخمين الذكي والرسم لحل الكمي، وتطبيقات لفظية متقدمة على الخطأ السياقي، مع اختباري محاكاة (1) و(2) لقياس التقدم.</p></li>
+    <li data-n="3"><h4>الأسابيع 11–14: التجميعات وبنك الأسئلة</h4><p>التدريب على أحدث تجميعات القسمين الكمي واللفظي، وبنك أسئلة للتدريب الذاتي، وورشة عمل مشتركة لإدارة الوقت وتقنيات استبعاد الإجابات الخاطئة، ثم اختبار محاكاة (3).</p></li>
+    <li data-n="4"><h4>الأسابيع 15–19: المراجعة الختامية والاختبارات النهائية</h4><p>مراجعة التقفيلات والأخطاء الشائعة لكل طالب على حدة، حل أوراق عمل واختبارات إلكترونية قصيرة، وتوجيهات نفسية وفنية ختامية قبل الاختبارات النهائية.</p></li>
+  </ol>
+  <div class="cta-row"><a class="cta-btn" href="assets/05-abilities-plan.pdf" target="_blank" rel="noopener"><span class="ico">📄</span> فتح خطة القدرات كاملة (PDF)</a></div>`},
+
+"current_schedule":{group:"p4", icon:"🔎", filetype:"تقرير تفاعلي — رابط خارجي", title:"تحليل الجدول الحالي",
+ teaser:"تقرير تفاعلي كامل يحلل الفجوة بين الجدول الدراسي الحالي والمعيار المعتمد.",
+ body:`
+  <div class="mf"><p>تحليل معمّق للجدول الدراسي الحالي من حيث مدى ملاءمته لرحلة تعلم ممتعة للطالب، وتوازنه بين التعلم المعرفي والتطبيق والإثراء والمهارات، ومدى اتساقه مع نموذج التعلم الممتع والمنتج المعتمد في النبلاء.</p></div>
+  <div class="mf"><p>التقرير الكامل تفاعلي (خانات قابلة للفتح): يغطي تحليل الفجوة الاستراتيجية محورًا بمحور، الهيكلة الزمنية المقترحة، ونموذج الجدول الأسبوعي، وحلول كل فجوة مرصودة.</p></div>
+  <div class="cta-row"><a class="cta-btn" href="https://hussienmohamme.github.io/AnalyticalReport11/" target="_blank" rel="noopener"><span class="ico">🔗</span> فتح التقرير التحليلي الكامل</a></div>`},
+
+"proposed_schedule":{group:"p4", icon:"🗂️", filetype:"ملف Excel", title:"نماذج للجدول المقترح — الربع الثاني",
+ teaser:"مقارنة مباشرة بين الجدول الحالي والنموذج المقترح للتعلم الممتع والمنتج.",
+ body:`
+  <div class="mf"><p>ملف Excel بنموذجين للمقارنة، على مثال الصف الأول متوسط (قسم البناء بنات):</p></div>
+  ${tbl(['النموذج','السمة الرئيسة','عدد الحصص أسبوعيًا'],[
+    ['ورقة 1 — الجدول الحالي','جدول تقليدي بحصص 40 دقيقة متتالية، فترة استراحة واحدة (25 د)','34 حصة'],
+    ['ورقة 2 — النموذج المقترح','انطلاقة يومية هادفة + فسحة نشاط ووجبة + صلاة في وقتها، مع استوديوهات ومختبرات وأندية تطبيقية (🟩) بدل الحصص النظرية في نهاية اليوم','35 حصة'],
+  ])}
+  <div class="mf"><h5>أبرز إضافات النموذج المقترح</h5>
+    <ul>
+      <li>مختبر العلوم، استوديو العلوم، استوديو STEM، ومعمل الحاسب والبرمجة.</li>
+      <li>أكاديمية الرياضة والحركة، نادي القراءة، نادي اللغات، ومساحة الهوايات.</li>
+      <li>مجلس القرآن والتدبر، وورشة التعبير والإلقاء، واستوديو الإبداع والفنون.</li>
+      <li>شعار يومي مختلف كل يوم (مهارة اليوم، قيمة اليوم، حصاد الأسبوع) بدل يوم مكرر بلا هوية.</li>
+    </ul>
+  </div>
+  <div class="cta-row"><a class="cta-btn" href="assets/06-proposed-schedule-q2.xlsx" target="_blank" rel="noopener"><span class="ico">🗂️</span> فتح ملف الجدول المقترح (Excel)</a></div>`},
+};
+
+/* ============================================================
+   TILE RENDERING
+============================================================ */
+function buildTile(key){
+  const item = content[key];
+  return `<div class="tile" tabindex="0" data-key="${key}">
+    <div class="tile-dome">${item.icon}</div>
+    <div class="tile-body">
+      <div class="filetype">${item.filetype}</div>
+      <h3>${item.title}</h3>
+      <p>${item.teaser}</p>
+      <div class="tile-cta">اضغط لعرض التفاصيل وفتح المرفق <span class="arrow">‹</span></div>
+    </div>
+  </div>`;
+}
+const groups = {p1:[], p2:[], p3:[], p4:[]};
+Object.keys(content).forEach(k=>groups[content[k].group].push(k));
+document.getElementById('grid-p1').innerHTML = groups.p1.map(buildTile).join('');
+document.getElementById('grid-p2').innerHTML = groups.p2.map(buildTile).join('');
+document.getElementById('grid-p3').innerHTML = groups.p3.map(buildTile).join('');
+document.getElementById('grid-p4').innerHTML = groups.p4.map(buildTile).join('');
+
+/* ============================================================
+   MODAL LOGIC
+============================================================ */
+const overlay = document.getElementById('modalOverlay');
+const modalNum = document.getElementById('modalNum');
+const modalTitle = document.getElementById('modalTitle');
+const modalTag = document.getElementById('modalTag');
+const modalBody = document.getElementById('modalBody');
+
+function openModal(key){
+  const item = content[key];
+  if(!item) return;
+  modalNum.textContent = item.icon;
+  modalTitle.textContent = item.title;
+  modalTag.textContent = item.filetype;
+  modalBody.innerHTML = item.body;
+  modalBody.scrollTop = 0;
+  overlay.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeModal(){ overlay.classList.remove('open'); document.body.style.overflow = ''; }
+document.querySelectorAll('.tile').forEach(t=>{
+  t.addEventListener('click', ()=>openModal(t.dataset.key));
+  t.addEventListener('keypress', (e)=>{ if(e.key==='Enter') openModal(t.dataset.key); });
+});
+document.getElementById('modalClose').addEventListener('click', closeModal);
+overlay.addEventListener('click', (e)=>{ if(e.target === overlay) closeModal(); });
+document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape' && overlay.classList.contains('open')) closeModal(); });
+
+/* ============================================================
+   HERO LOGO ROSETTE
+============================================================ */
+(function buildRosette(){
+  const rosette = document.getElementById('rosette');
+  if(!rosette) return;
+  const LOGO_SRC = 'assets/logo-transparent.png';
+  function ring(count, radius, size, spinSeconds, reverse){
+    const wrap = document.createElement('div');
+    wrap.style.position='absolute'; wrap.style.inset='0';
+    wrap.style.animation = 'spin-rev '+spinSeconds+'s linear infinite';
+    wrap.style.animationDirection = reverse ? 'reverse' : 'normal';
+    for(let i=0;i<count;i++){
+      const angle = (360/count)*i;
+      const item = document.createElement('div');
+      item.className = 'rz-item';
+      item.style.width = size+'px'; item.style.height = size+'px';
+      item.style.marginTop = (-size/2)+'px'; item.style.marginLeft = (-size/2)+'px';
+      item.style.transform = 'rotate('+angle+'deg) translate('+radius+'px) rotate('+(-angle)+'deg)';
+      const img = document.createElement('img'); img.src = LOGO_SRC; img.alt='';
+      item.appendChild(img); wrap.appendChild(item);
+    }
+    rosette.appendChild(wrap);
+  }
+  ring(10, 420, 58, 130, false);
+  ring(7, 250, 42, 95, true);
+  ring(4, 90, 30, 60, false);
+})();
+
+/* ============================================================
+   STAT COUNT-UP
+============================================================ */
+const stats = document.querySelectorAll('.stat b');
+const targets = [4,7,28,100];
+let animated = false;
+function animateStats(){
+  if(animated) return; animated = true;
+  stats.forEach((el,i)=>{
+    const isPercent = el.textContent.includes('%');
+    const target = targets[i];
+    let cur = 0;
+    const step = Math.max(1, Math.round(target/24));
+    const tick = ()=>{
+      cur = Math.min(target, cur+step);
+      el.textContent = cur + (isPercent ? '%' : '');
+      if(cur < target) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  });
+}
+new IntersectionObserver((entries)=>{ entries.forEach(en=>{ if(en.isIntersecting) animateStats(); }); },{threshold:.4}).observe(document.querySelector('.stat-row'));
+
+const backTop = document.getElementById('backTop');
+window.addEventListener('scroll', ()=>{ backTop.classList.toggle('show', window.scrollY > 500); });
+backTop.addEventListener('click', ()=>window.scrollTo({top:0,behavior:'smooth'}));
+</script>
+</body>
+</html>
